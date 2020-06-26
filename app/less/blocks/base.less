@@ -1,0 +1,49 @@
+body {
+	width: 100%;
+	color: #333;
+	margin: 0 auto;
+	font-size: 16px;
+	max-width: 1380px;
+	font-family: Montserrat;
+}
+
+a {text-decoration: none;}
+
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+    max-width: 1170px;
+    @media screen and (min-width: 1200px) {width: 100% !important;}
+}
+
+.logo {
+	.flex();
+    align-items: center;
+    margin-right: 25.21367521367521%;
+    &__img {padding-right: 17px;}
+    &__text{
+        font-size: 24px;
+        font-weight: 700;
+        font-family: Lato;
+        line-height: 16px;
+        text-transform: uppercase;
+        &--color {color: #8d81ac;}	
+    }
+    &:hover {&:extend(.cursor);}
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.cursor {cursor: pointer;}
+:focus {outline: 0;}
+.opacity {opacity: 0.5;}
+.font-weight {font-weight: 600;}
+.text-decoration {text-decoration: underline;}

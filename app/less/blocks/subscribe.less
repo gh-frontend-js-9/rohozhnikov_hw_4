@@ -1,0 +1,42 @@
+.subscribe {
+    padding: 55px 0;
+    background: #f4f4f4;
+    &__wrapper {text-align: center;}
+    &__subtitle {
+        display: block;
+        font-size: 30px;
+        font-weight: 700;
+        color: #635c73;
+        margin: 0 0 40px 0;
+    }
+    &__email {
+        width: 90%;
+        border: none;
+        height: 42px;
+        background: #fff;
+        margin: 0 0 14px 0;
+        padding: 0 0 0 15px;
+        border-radius: 28px;
+        @media screen and (min-width: 576px) {
+            width: 335px;
+            margin: 0 20px 0 0;
+        }
+    }
+    &__button {
+        color: #fff;
+        width: 140px;
+        height: 42px;
+        border: none;
+        font-size: 13px;
+        font-weight: 400;
+        background: #8d81ac;
+        border-radius: 28px;
+        font-family: Montserrat;
+        text-transform: uppercase;
+        &:hover {
+            &:extend(.cursor);
+            &:extend(.font-weight);
+            background-color: #70477e;
+        }
+    }
+}

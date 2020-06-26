@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
+	<title>ForkIO BEM LESS</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__wrapper wrapper">
+			<div class="header__logo logo">
+				<img class="logo__img" src="img/logo.png" alt="Logo">
+				<span class="logo__text">Fork<span class="logo__text--color">IO</span></span>
+			</div>
+			<nav class="nav">
+				<ul class="nav__menu menu">
+					<li class="menu__item">
+						<a class="menu__link" href="#over">Overview</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#about">About Fork</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#buying">Buying Options</a>
+					</li>
+					<li class="menu__item">
+						<a class="menu__link" href="#support">Support</a>
+					</li>
+				</ul>
+				<span class="nav__button" onclick="openNav()"></span>
+				<div id="sliderMenu" class="nav__burger-menu burger-menu">
+					<div class="burger-menu--blackout"></div>
+					<span class="burger-menu__wrap">
+						<a class="burger-menu__link burger-menu__close" href="javascript:void(0)" onclick="closeNav()">×</a>
+						<button class="burger-menu__button">Buy Now</button>
+					</span>
+					<a class="burger-menu__link" href="#over" aria-label="Overview">Overview</a>
+					<a class="burger-menu__link" href="#about" aria-label="Link about Fork Io section">About fork</a>
+					<a class="burger-menu__link" href="#buying" aria-label="link on Byu">Buying options</a>
+					<a class="burger-menu__link" href="#support" aria-label="link on support page">Support</a>
+				</div>
+			</nav>
+			<button class="header__button">Buy Now</button>
+		</div>
+	</header>
+	<main> 
+		<section class="fork">
+			<div class="fork__wrapper wrapper">
+				<h2 class="fork__title">Fork App</h2>
+				<p class="fork__slogan">A real gamechanger in the world of web development</p>
+				<span class="fork__author">v. 2.8 For Mac and Windows</span>
+			</div>	
+		</section>
+		<section class="editor">
+			<div class="editor__wrapper wrapper">
+				<div class="editor__download download">
+					<button class="download__button">Download For Free Now</button>
+					<span class="download__subject">Unlimited 30-Days Trial Period</span>
+				</div>
+				<h2 class="editor__title" id="over" >Revolutionary editor</h2>
+				<span class="editor__text">
+					Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet 
+					vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+				</span>
+				<div class="editor__content"></div>
+			</div>
+		</section>
+		<section class="here">
+			<div class="here__wrapper wrapper">
+				<div class="here__wrap">
+					<div class="here__content">
+						<h4 class="here__subtitle">Creatred to Make The Web Better</h4>
+						<span class="here__text">
+							Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra 
+							dui laoreet vulputate dignissim. Sed id metus id quam auctor 
+							molestie eget ut augue.
+						</span>
+					</div>
+					<div class="here__content">
+						<h4 class="here__subtitle">Incredibly Powerful Tool</h4>
+						<span class="here__text">
+							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus 
+							felis odio, ut volutpat massa placerat ac. Curabitur dapibus 
+							iaculis mi gravida luctus. Aliquam erat volutpat.
+						</span>
+					</div>
+					<div class="here__content">
+						<h4 class="here__subtitle">Experimental Stuff</h4>
+						<span class="here__text">
+							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus 
+							felis odio, ut volutpat massa placerat ac. Curabitur dapibus 
+							iaculis mi gravida luctus. Aliquam erat volutpat.
+						</span>
+					</div>
+					<div class="here__content">
+						<h4 class="here__subtitle">Creatred to Make The Web Better</h4>
+						<span class="here__text">
+							Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus 
+							felis odio, ut volutpat massa placerat ac. Curabitur dapibus 
+							iaculis mi gravida luctus. Aliquam erat volutpat.
+						</span>
+					</div>
+				</div>
+				<div class="here__wrap">
+					<span class="here__title">&#60;Here is what you get&#62;</span>
+					<div class="here__snippet">
+						<img class="here__img" src="img/code_block.png" alt="code block for developer">
+					</div>
+				</div>
+			</div>
+		</section> 
+		<section class="user">
+			<div class="user__wrapper wrapper">
+				<div class="user__author author">
+					<img class="author__avatar" src="img/usirpic.png" alt="usirpic">
+					<div class="author__wrapper">
+						<span class="author__subject">Steven Strange</span>
+						<a class="author__link" href="#">@DoctorS</a>
+					</div>
+				</div>
+				<div class="user__slider slider">
+					<img class="slider__icon" src="img/Arrow_L.png" alt="" class="arrov">
+					<div class="slider__wrapper">
+						<p class="slider__text">
+							<a class="slider__link" href="#">@Pixelbuddha</a> 
+							Suspendisse sodales sem est, in scelerisque felis scelerisque in. 
+							Aenean faucibus mollis risus. Praesent sit amet erat eget eros.
+						</p>
+						<span class="slider__meta">2 hours ago</span>
+					</div>
+					<img class="slider__icon" src="img/Arrow_R.png" alt="" class="arrov">
+				</div>
+				<hr class="user--line">
+				<div class="user__socials socials">
+					<div class="socials__wrapper">
+						<a class="socials__link" href="#">
+							<i class="socials__icon fab fa-github"></i>GitHub
+						</a>
+						<span class="socials__meta">7 352 Followers</span>
+					</div>
+					<div class="socials__wrapper">
+						<a class="socials__link" href="#">
+							<i class="socials__icon fab fa-twitter"></i>Twitter
+						</a>
+						<span class="socials__meta">136 312 Followers</span>
+					</div>
+					<div class="socials__wrapper">
+						<a class="socials__link" href="#">
+							<i class="socials__icon fab fa-facebook-f"></i>Facebook
+						</a>
+						<span class="socials__meta">218 092 Subscribers</span>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="people">
+			<div class="people__wrapper wrapper">
+				<h2 class="people__title" id="about">People Are Talking About Fork</h2>
+				<div class="people__wrap">
+					<div class="people__inner">
+						<div class="people__container">
+							<img class="people__img" src="img/magazine.png" alt="magazine">
+							<span class="people__desc">
+								Sed vestibulum scelerisque urna, eu finibus leo facilisis sit 
+								amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.
+							</span>
+						</div>
+						<div class="people__container">
+							<img class="people__img" src="img/codrops.png" alt="codrops">
+						<span class="people__desc">
+							Donec euismod dolor ut ultricies consequat. Vivamusurna ipsum, 
+							rhoncus molestie neque ac, mollis eleifend nibh.
+						</span>
+						</div>
+						<div class="people__container">
+							<img class="people__img" src="img/w.png" alt="w">
+							<span class="people__desc">
+								In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat 
+								fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.
+							</span>
+						</div>
+					</div>
+					<div class="people__inner">
+						<div class="people__container">
+							<img class="people__img" src="img/pixel.png" alt="pixel">
+							<span class="people__desc">
+								Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. 
+								Proin id dignissim magna. Sed varius urna et pulvinar venenatis.
+							</span>
+						</div>
+						<div class="people__container">
+							<img class="people__img" src="img/bloq.png" alt="bloq">
+							<span class="people__desc">
+								Praesent ut eros tristique, malesuada lectus vel, lobortis massa. 
+								Nulla faucibus lorem id arcu consequat faucibus.
+							</span>
+						</div>
+						<div class="people__container">
+							<img class="people__img" src="img/tnw.png" alt="tnw">
+							<span class="people__desc">
+								Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. 
+								Pellentesque porttitor cursus massa et vestibulum.
+							</span>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<section class="pricing">
+			<div class="pricing__wrapper wrapper">
+				<h2 class="pricing__title" id="buying">Fork Subscription Pricing</h2>
+				<div class="pricing__holder">
+					<div class="pricing__cart">
+						<div class="pricing__rang">Students</div>
+						<div class="pricing__inner">
+							<p class="pricing__price">
+								<span class="pricing__price--wide">$</span>29
+							</p>
+							<p class="pricing__meta">per month</p>
+							<div class="pricing__cart--line"></div>
+							<p class="pricing__headline">Personal License</p>
+							<button class="pricing__button">purchase</button>
+						</div>
+					</div>
+					<div class="pricing__cart">
+						<div class="pricing__rang">Personal License</div>
+						<div class="pricing__inner">
+							<p class="pricing__price">
+								<span class="pricing__price--wide">$</span>59
+							</p>
+							<p class="pricing__meta">per Month</p>
+							<div class="pricing__cart--line"></div>
+							<p class="pricing__headline">Professional License Email Support</p>
+							<button class="pricing__button">purchase</button>
+						</div>
+					</div>
+					<div class="pricing__cart">
+						<div class="pricing__rang">agency</div>
+						<div class="pricing__inner">
+							<p class="pricing__price">
+								<span class="pricing__price--wide">$</span>99
+							</p>
+							<p class="pricing__meta">per month</p>
+							<div class="pricing__cart--line"></div>
+							<p class="pricing__headline">1-12 Team Members Phone Support</p>
+							<button class="pricing__button">purchase</button>
+						</div>
+					</div>
+					<div class="pricing__cart">
+						<div class="pricing__rang">enterprise</div>
+						<div class="pricing__inner">
+							<p class="pricing__price"><span>$</span>159</p>
+							<p class="pricing__meta">per month</p>
+							<div class="pricing__cart--line"></div>
+							<p class="name">Unlimited Team Members 24/ 7 Phone Support</p>
+							<button class="pricing__button">purchase</button>
+						</div>
+					</div>
+					<div class="pricing__column">
+						<div class="pricing__cart">
+							<div class="pricing__rang">Students</div>
+							<div class="pricing__inner">
+								<p class="pricing__price">
+									<span class="pricing__price--wide">$</span>29
+								</p>
+								<p class="pricing__meta">per month</p>
+								<div class="pricing__cart--line"></div>
+								<p class="pricing__headline">Personal License</p>
+								<button class="pricing__button">purchase</button>
+							</div>
+						</div>
+						<div class="pricing__cart">
+							<div class="pricing__rang">Personal License</div>
+							<div class="pricing__inner">
+								<p class="pricing__price">
+									<span class="pricing__price--wide">$</span>59
+								</p>
+								<p class="pricing__meta">per Month</p>
+								<div class="pricing__cart--line"></div>
+								<p class="pricing__headline">Professional License Email Support</p>
+								<button class="pricing__button">purchase</button>
+							</div>
+						</div>
+					</div>
+					<div class="pricing__column">
+						<div class="pricing__cart">
+							<div class="pricing__rang">agency</div>
+							<div class="pricing__inner">
+								<p class="pricing__price">
+									<span class="pricing__price--wide">$</span>99</p>
+								<p class="pricing__meta">per month</p>
+								<div class="pricing__cart--line"></div>
+								<p class="pricing__headline">1-12 Team Members Phone Support</p>
+								<button class="pricing__button">purchase</button>
+							</div>
+						</div>
+						<div class="pricing__cart">
+							<div class="pricing__rang">enterprise</div>
+							<div class="pricing__inner">
+								<p class="pricing__price">
+									<span class="pricing__price--wide">$</span>159
+								</p>
+								<p class="pricing__meta">per month</p>
+								<div class="pricing__cart--line"></div>
+								<p class="pricing__headline">Unlimited Team Members 24/ 7 Phone Support</p>
+								<button class="pricing__button">purchase</button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="pricing__text">
+					Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae 
+					aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat 
+					nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, 
+					nascetur ridiculus mus.
+				</span>
+			</div>
+		</section>
+		<section class="subscribe">
+			<div class="subscribe__wrapper wrapper">
+				<form class="subscribe__form" action="">
+					<label class="subscribe__label" for="">
+						<span class="subscribe__subtitle">Subscribe To Our Newsletter</span>
+						<input class="subscribe__email" type="email" placeholder="Email...">
+						<input class="subscribe__button" type="button" value="Subscribe">
+					</label>
+				</form>
+			</div>
+		</section>
+		<section class="popular">
+			<div class="popular__wrapper wrapper">
+				<div class="popular__box" id="support">
+					<h3 class="popular__headline">New in Release 2.8</h3 class="popular__headline">
+					<h5 class="popular__subtitle">
+						<span class="popular__subtitle--color">
+							Fully Available: Live Preview Support for Multiple Browsers
+						</span>
+					</h5>
+					<span class="popular__text">
+						Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor 
+						tortor at odio condimentum, sit amet fringilla ligula maximus. Mauris 
+						venenatis nisl nisi, et dictum dui aliquet nec. Sed erat, nec aliquam 
+						vel, aliquam ac felis.
+					</span>
+					<h5 class="popular__subtitle">
+						<span class="popular__subtitle--color">Improved Support for Typing</span>
+					</h5>
+					<span class="popular__text">
+						Nulla purus quam, pulvinar sed ante et, feugiat maximus velit. 
+						Donec eu elit mauris.
+					</span>
+					<h5 class="popular__subtitle">
+						<span class="popular__subtitle--color">Improved Stability</span>
+					</h5>
+					<span class="popular__text">
+						Proin id ligula eget massa tincidunt molestie. Morbi urna 
+						lectus, molestie vel quam vel, iaculis fermentum nunc. 
+						Morbi imperdiet, leo in interdum pretium.
+					</span>
+					<a class="popular__link" href="#">
+						<button class="popular__button">Go to Release Log</button>
+					</a>
+				</div>
+				<div class="popular__box">
+					<h3 class="popular__headline">Popular Extensions</h3 class="popular__headline">
+					<h5 class="popular__subtitle">Custom Themes 1.1</h5>
+					<span class="popular__text">
+						Etiam viverra vulputate diam, pulvinar cursus augue egestas ullamcorper.
+					</span>
+					<h5 class="popular__subtitle">Filter Forge</h5>
+					<span class="popular__text">
+						Nulla purus quam, pulvinar sed et, feugiat maximus velit.
+					</span>
+					<h5 class="popular__subtitle">WebZap</h5>
+					<span class="popular__text">
+						Morbi imperdiet, leo in interdum pretium, elit eros dapibus 
+						velit, eu posuere quam diam vitae orci. Suspendisse interdum 
+						accumsan magna vitae commodo.
+					</span>
+					<h5 class="popular__subtitle">Renamy</h5>
+					<span class="popular__text">
+						Vivamus consectetur suscipit elit, ut lacinia diam elementum et.
+					</span>
+					<a class="popular__link" href="#">
+						<button class="popular__button">Go to Marketplace</button>
+					</a>
+				</div>
+				<div class="popular__box">
+					<h3 class="popular__headline">New From the Blog</h3 class="popular__headline">
+					<h5 class="popular__subtitle">Morbi imperdiet, leo in interdum pretium.</h5>
+					<span class="popular__meta">February 18, 2015</span>
+					<h5 class="popular__subtitle">
+						Donec orci ante, porta vel nulla quis, aliquet hendrerit leo.
+					</h5>
+					<span class="popular__meta">February 12, 2015</span>
+					<h5 class="popular__subtitle">Suspendisse egestas vulputate luctus.</h5>
+					<span class="popular__meta">February 2, 2015</span>
+					<h5 class="popular__subtitle">
+						Quisque varius ante lorem, eget pretium purus hendrerit a egestas.
+					</h5>
+					<span class="popular__meta">February 2, 2015</span>
+					<h5 class="popular__subtitle">Phasellus in augue risus.</h5>
+					<span class="popular__meta">January 23, 2015</span>
+					<a class="popular__link" href="#">
+						<button class="popular__button">Go to Blo5</button>
+					</a>
+				</div>
+			</div>
+			<hr class="popular--line">
+		</section>
+	</main> 
+	<footer class="footer">
+		<div class="footer__wrapper wrapper">
+			<div class="footer__box">
+				<div class="footer__logo logo">
+					<img class="logo__img" src="img/logo.png" alt="Logo">
+					<span class="logo__text">
+						Fork<span class="logo__text--color">IO</span>
+					</span>
+				</div>
+				<span class="footer__text">
+					Lorem ipsum dolor sit amet, feugiat delicat liberavisse 
+					id cum no quo.
+				</span>
+			</div>
+			<div class="footer__box">
+				<span class="footer__subtitle">Navigation</span>
+				<ul class="footer__menu">
+					<li class="footer__item">
+						<a class="footer__link" href="#">Home</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">Overview</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">About</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">Buying</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">Options</a>
+					</li>
+					<li class="footer__item">
+						<a class="footer__link" href="#">Support</a>
+					</li>
+				</ul>
+			</div>
+			<div class="footer__box">
+				<span class="footer__number">347 567 78 90</span>
+				<span class="footer__time">AVAILABLE FROM 12PM - 18PM</span>
+				<p class="footer__city">New York, NY</p>
+				<span class="footer__address">560 Judah St & 15th Ave, Apt 5 San Francisco, CA, 230903</span>
+			</div>
+			<div class="footer__box">
+				<span class="footer__subtitle">info</span>
+				<span class="footer__text">
+					Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper 
+					suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel 
+					hendrerit iriure dolor in hendrerit.
+				</span>
+			</div>
+		</div>
+	</footer>
+	<script>
+		function openNav() {
+		  document.getElementById("sliderMenu").style.display = "block";
+		}
+	  
+		function closeNav() {
+		  document.getElementById("sliderMenu").style.display = "none";
+		}
+	</script>
+</body>
+</html>
