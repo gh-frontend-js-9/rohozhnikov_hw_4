@@ -1,4 +1,3 @@
 *.txt
-*.json
-gulpfile.js
+normalize.css
 node_modules
