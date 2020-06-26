@@ -1,0 +1,57 @@
+.popular {
+    &__wrapper {
+        .flex-column();
+        justify-content: space-between;
+        @media screen and (min-width: 768px) {
+            .flex();
+            flex-direction: row;
+        }
+    }
+    &__box {
+        flex-basis: 30%;
+        &:first-child {margin-top: 65px;}
+        @media screen and (min-width: 768px) {margin-top: 0 !important;}
+    }
+    &__headline {
+        color: #d3d1da;
+        font-size: 28px;
+        font-weight: 700;
+        margin: 14px 0 33px 0;
+        @media screen and (min-width: 768px) {margin: 79px 0 58px 0}
+    }
+    &__subtitle {
+        color: #8d81ac;
+        font-size: 16px;
+        margin-bottom: 20px;
+        font-weight: bold;
+        &--color {color: #323232}
+    }
+    &__text {
+        font-size: 13px;
+        font-weight: 400;
+        color: #848e97;
+    }
+    &__button {
+        border: none;
+        width: 158px;
+        height: 35px;
+        display: block;
+        font-size: 14px;
+        font-weight: 400;
+        color: #8d81ac;
+        border-radius: 5px;
+        background: #f4f4f4;
+        margin: 36px 0 45px 0;
+        &:hover {&:extend(.opacity);}
+    }
+    &--line {
+        width: 70%;
+        margin: 0 auto;
+        border: 1px solid #f4f4f4;
+    }
+    &__meta {
+        font-size: 13px;
+        font-weight: 400;
+        color: #848e97;
+    }
+}

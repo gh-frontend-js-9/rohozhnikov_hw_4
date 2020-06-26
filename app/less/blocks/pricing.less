@@ -1,0 +1,148 @@
+.pricing {
+    border: 1px solid transparent;
+    background: url(../img/bg_Pricing.png) no-repeat #4A3B4E;
+    &__wrapper {
+        text-align: center;
+        @media screen and (min-width: 576px) {width: 95%;}
+    }
+    &__title {
+        color: #fff;
+        font-size: 42px;
+        font-weight: 700;
+        margin-bottom: 60px;
+        @media screen and (min-width: 576px) {font-size: 48px;}
+    }
+    &__holder {
+        .flex-column();
+        align-items: center;
+        justify-content: space-between;
+        @media screen and (min-width: 576px) {
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        @media screen and (min-width: 1200px) {
+            align-items: normal;
+            justify-content: space-between;
+        }
+    }
+    &__cart {
+        width: 274px;
+        color: #fff;
+        margin-top: 14px;
+        background-color: rgba(255, 255, 255, 0.11);
+        &--line {
+            height: 5px;
+            width: 60px;
+            margin: 0 auto;
+            margin-bottom: 31px;
+            background: #8d81ac;
+        }
+        @media screen and (min-width: 576px) {
+            display: none;
+            &:hover {background-color: rgba(0, 0, 0, 0.2)}
+        }
+        @media screen and (min-width: 768px) {
+            &:hover {
+                position: relative;
+                padding-bottom: 35px;
+            }
+            &:first-child {
+                margin-bottom: 40px;
+                &:hover {
+                    bottom: 20px;
+                    margin-bottom: 5px;
+                }
+            }
+            &:last-child {
+                margin-top: 40px;
+                &:hover {
+                    top: 20px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            display: block;
+            &:first-child {
+                margin-bottom: 0;
+                &:hover {
+                    bottom: 0;
+                    margin-bottom: 0
+                }
+            }
+            &:hover {
+                top: 25px;
+                margin-top: -35px;
+            }
+        }
+    }
+    &__column {
+        @media screen and (min-width: 576px) {
+            margin: 0 5px;
+            align-items: center;
+            .flex-column() !important;
+            .pricing__cart {    
+                height: 490px;
+                display: block;
+            }
+        }
+        @media screen and (min-width: 1200px) {display: none !important;}
+    }
+    &__rang {
+        font-size: 24px;
+        font-weight: 400;
+        padding: 45px 0 33px 0;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.06);
+    }
+    &__price {
+        font-size: 60px;
+        font-weight: 700;
+        margin: 36px 0 26px 0;
+        text-transform: uppercase;
+        font-family: "Montserrat - Bold";
+        &--wide {
+            font-weight: 400;
+            font-family: "Montserrat - Regular";
+        }
+    }
+    &__meta {
+        opacity: 0.3;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 38px;
+        text-transform: uppercase;
+    }
+    &__button {
+        color: #fff;
+        width: 160px;
+        height: 42px;
+        border: none;
+        font-size: 15px;
+        font-weight: 400;
+        border-radius: 28px;
+        margin: 36px 0 38px 0;
+        text-transform: uppercase;
+        background-color: rgba(255, 255, 255, 0.15);
+        &:hover {
+            &:extend(.cursor);
+            &:extend(.font-weight);
+        }
+    }
+    &__text {
+        opacity: 0.8;
+        display: block;
+        color: #a291a5;
+        font-size: 14px;
+        font-weight: 400;
+        margin: 41px 0 38px 0;
+        font-family: "Source Sans Pro";
+        &:hover {
+            opacity: 9;
+            color: #fff;
+            &:extend(.cursor);
+            &:extend(.font-weight);
+        }
+        @media screen and (min-width: 992px) {margin: 133px 0 77px;}
+    }
+}
